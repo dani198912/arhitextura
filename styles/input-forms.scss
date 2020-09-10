@@ -1,0 +1,78 @@
+input[type=text]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted black;
+    text-align: center;
+    font-weight: 700;
+    // all input styling
+}
+input[type=email]{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px dotted black;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -1px;
+    // all input styling
+}
+
+input.normal-text{
+    text-align: left;
+    font-family: monospace;
+}
+input[name=cnp]{
+    font-family: monospace;
+    letter-spacing: 4px;
+    
+}
+input[name=cod-postal]{
+    font-family: monospace;
+    letter-spacing: 4px;
+    
+}
+.date-personale input{
+    font-family: monospace;
+}
+
+#arie-teren{ max-width: 60px;}
+#cardinale{
+    max-width: 60px;
+    font-weight: 700;
+}
+@media print{
+    select[name=cardinale]{
+        border: none;
+        appearance: none;
+        width: 60px;
+    }
+
+    .tabel-suprafete{
+        div{
+            div{
+            input{
+                border: none;
+            }
+        }
+        }
+    }
+    .tabel-inaltimi{
+        div{
+            div{
+            input{
+                border: none;
+            }
+        }
+        }
+    }
+    .tabel-caracteristici{
+        div{
+            div{
+            input{
+                border: none;
+            }
+        }
+        }
+    }
+}

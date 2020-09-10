@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  background-color: white;
+  padding-top: 0mm;
+  padding-left: 10mm;
+  padding-right: 10mm;
+  max-width: 210mm;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.2;
+  float: none !important;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40mm 210mm 40mm;
+      grid-template-columns: 40mm 210mm 40mm;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .date-personale {
+  text-align: start;
+}
+
+body .date-imobil {
+  text-align: start;
+}
+
+body h1.indent {
+  text-indent: 40px;
+}
+
+body h1 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+body p {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+body p.indent {
+  text-indent: 40px;
+}
+
+body ol {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.left-menu, .right-menu {
+  text-align: left;
+}
+
+pagina {
+  display: block;
+  page-break-after: always;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 5mm;
+  padding-bottom: 5mm;
+  padding-left: 10mm;
+  padding-right: 10mm;
+  border: 1px solid black;
+  -webkit-box-shadow: 10px 11px 5px -4px rgba(0, 0, 0, 0.55);
+          box-shadow: 10px 11px 5px -4px rgba(0, 0, 0, 0.55);
+}
+
+pagina .nota-subsol {
+  border-top: 1px solid black;
+  font-size: 0.5rem;
+  clear: both;
+  position: relative;
+}
+
+pagina .nota-subsol p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+}
+
+.proprie-raspundere {
+  border: thick solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+@media print {
+  pagina {
+    padding: 0px;
+    margin: 0px;
+  }
+  @page {
+    margin: 0mm;
+    size: 210mm 297mm;
+    padding-left: 30mm;
+  }
+  .left-menu,
+  .right-menu {
+    visibility: hidden;
+  }
+  pagina {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-top: 10mm;
+    /* margin you want for the content */
+    margin-left: 10mm;
+    /* margin you want for the content */
+    margin-bottom: 0mm;
+    /* margin you want for the content */
+    margin-right: 0mm;
+    /* margin you want for the content */
+    padding-top: 5mm;
+  }
+}
+/*# sourceMappingURL=index.css.map */

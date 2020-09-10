@@ -1,0 +1,16 @@
+ol.nested-li{
+    padding: 0;
+    margin-left: 40px;
+    // list-style: none;
+    ol{
+        list-style: none;
+        li{
+            margin-left:-45px;
+            padding-bottom: 5px;
+        }
+    }
+    ol > li:first-child {counter-reset: item;}
+    ol > li {counter-increment: item;}
+    ol > li:before {content:"d."counters(item, ".") ") ";}
+}
+

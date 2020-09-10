@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.85rem;
+    background-color: rgb(255, 255, 255);
+    padding-top: 0mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    max-width: 190mm;
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.2;
+    float: none !important;
+    margin: auto;
+    .date-personale{
+        text-align: start;
+    }
+    .date-imobil{
+        text-align: start;
+    }
+    h1.indent {
+        text-indent: 40px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    p{
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    p.indent {
+        text-indent: 40px;
+    }
+    ol{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+}
+
+input{
+    padding: 0;
+    margin: 0;
+}
+
+.proprie-raspundere{
+    border: thick solid black;
+    // margin-left: 40px;
+    text-align: center;
+    padding: 5px;
+}
+pagina {
+    display: block;
+    page-break-after: always;
+    page-break-before: always;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 5mm;
+    padding-bottom: 5mm;
+    padding-left: 10mm;
+    padding-right: 10mm;
+    border: 1px solid black;
+    box-shadow: 10px 11px 5px -4px rgba(0,0,0,0.55);
+    .nota-subsol{
+        border-top: 1px solid black;
+        font-size: 0.5rem;
+        clear: both;
+        position: relative;
+       p{
+           margin-top: 0px;
+           margin-bottom: 0px;
+       }
+    }
+    
+
+}
+
+@media print{
+    pagina{
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,246 @@
+.tabel-tipuri{
+    display: grid;
+    .column-1{
+        grid-column: 1;
+        margin-left: 40px;
+        
+    }
+    .column-2{
+        grid-column: 2;
+    }
+    .indent{
+        margin-left: 10mm;
+    }
+}
+
+.tabel-suprafete{
+    display: grid;
+    grid-template-columns: 250px repeat(4, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    text-align: center;
+    // border-bottom: 1px solid black;
+    // border-left: 1px solid black;
+    
+    // border: thin solid black;
+    li{
+        margin-left: 5px;
+    }
+    .column{
+       display: grid;
+       grid-template-rows: 50px 20px 20px 20px 20px 20px ;
+       div{
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        border: 1px solid black;
+        margin: -1px 0 0 -1px;
+        input{
+            width: 90%;
+            
+        }
+       }
+    }
+    p{
+        text-align: center;
+    }
+    
+}
+
+.tabel-inaltimi{
+    display: grid;
+    grid-template-columns: 250px repeat(4, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    text-align: center;
+    // border-bottom: 1px solid black;
+    // border-left: 1px solid black;
+    
+    // border: thin solid black;
+    li{
+        margin-left: 5px;
+    }
+    .column{
+       display: grid;
+       grid-template-rows: 50px 20px 20px ;
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: -1px 0 0 -1px;
+        input{
+            width: 90%;
+            
+        }
+       }
+    }
+    p{
+        text-align: center;
+    }
+    
+}
+.tabel-caracteristici{
+    display: grid;
+    grid-template-columns: 250px repeat(4, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    text-align: center;
+    // border-bottom: 1px solid black;
+    // border-left: 1px solid black;
+    
+    // border: thin solid black;
+    li{
+        margin-left: 5px;
+    }
+    .column{
+       display: grid;
+       grid-template-rows: 50px 20px 20px 20px 20px 20px 20px 20px;
+       div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        margin: -1px 0 0 -1px;
+        input{
+            width: 90%;
+            
+        }
+       }
+    }
+    p{
+        text-align: center;
+    }
+}
+.tabel-verificatori{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    // text-align: center;
+    margin-top: 1mm;
+    div{
+        display: grid;
+        align-items: center;
+        // justify-content: start;
+        border: 1px solid black;
+        margin-top: -1px;
+        margin-left: -1px;
+        height: 45px;
+        padding: 5px;
+        input{
+            margin-left: 5px;
+            text-align: left;
+            height: 20px;
+        }
+    }
+    
+}
+.tabel-avize{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 0px;
+        // text-align: center;
+        margin-top: 1mm;
+        div{
+            display: grid;
+            align-items: center;
+            input{
+                margin-left: 5px;
+                text-align: left;
+                height: 20px;
+            }
+        }
+}
+
+.tabel-tip-constructii-locuinte{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 0px;
+    row-gap: 0px;
+    // text-align: center;
+    margin-top: 1mm;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    p{
+        text-align: center;
+    }
+}
+
+
+
+.tabel-4-coloane{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    margin-top: 1mm;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+}
+.tabel-5-coloane{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    margin-top: 1mm;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+}
+.tabel-6-coloane{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    margin-top: 1mm;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+}
+
+.tabel-7-coloane{
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    column-gap: 0px;
+    row-gap: 0px;
+    margin-top: 1mm;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        
+    }
+}
+
+.tabel-semnaturi{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 0px;
+    // text-align: center;
+    margin-top: 10mm;
+    div{
+        display: grid;
+        align-items: center;
+        input{
+            margin-left: 5px;
+            text-align: left;
+            height: 20px;
+        }
+    }
+}

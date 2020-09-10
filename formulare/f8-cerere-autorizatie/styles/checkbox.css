@@ -1,0 +1,145 @@
+.checkbox {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 0.85rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+}
+
+input[type=checkbox] {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font-size: 0.85rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+}
+
+label {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox-cap2 {
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#pagina-2 .hidden-cb {
+  display: none;
+}
+
+#pagina-2 input[name=luni]:checked ~ label[for=luni] {
+  text-decoration: line-through;
+}
+
+#pagina-2 input[name=zile]:checked ~ label[for=zile] {
+  text-decoration: line-through;
+}
+
+label {
+  cursor: pointer;
+}
+
+#pagina-1 .hidden-cb {
+  display: none;
+}
+
+#pagina-1 input[name=beneficiar-municipiu]:checked ~ label[for=beneficiar-municipiu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=beneficiar-orasul]:checked ~ label[for=beneficiar-orasul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=beneficiar-comuna]:checked ~ label[for=beneficiar-comuna] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=beneficiar-domiciliu]:checked ~ label[for=beneficiar-domiciliu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=beneficiar-sediu]:checked ~ label[for=beneficiar-sediu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-municipiu]:checked ~ label[for=firma-municipiu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-orasul]:checked ~ label[for=firma-orasul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-comuna]:checked ~ label[for=firma-comuna] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-satul]:checked ~ label[for=firma-satul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-sector]:checked ~ label[for=firma-sector] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-municipiu]:checked ~ label[for=firma-municipiu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-orasul]:checked ~ label[for=firma-orasul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-comuna]:checked ~ label[for=firma-comuna] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-satul]:checked ~ label[for=firma-satul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=firma-sector]:checked ~ label[for=firma-sector] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=imobil-municipiu]:checked ~ label[for=imobil-municipiu] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=imobil-orasul]:checked ~ label[for=imobil-orasul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=imobil-comuna]:checked ~ label[for=imobil-comuna] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=imobil-satul]:checked ~ label[for=imobil-satul] {
+  text-decoration: line-through;
+}
+
+#pagina-1 input[name=imobil-sector]:checked ~ label[for=imobil-sector] {
+  text-decoration: line-through;
+}
+
+#pagina-1 label {
+  cursor: pointer;
+}
+/*# sourceMappingURL=checkbox.css.map */

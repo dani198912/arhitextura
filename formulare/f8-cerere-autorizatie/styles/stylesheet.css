@@ -5,7 +5,7 @@ body {
   padding-top: 0mm;
   padding-left: 10mm;
   padding-right: 10mm;
-  max-width: 190mm;
+  max-width: 210mm;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.2;
@@ -44,21 +44,9 @@ body ol {
   margin-bottom: 5px;
 }
 
-input {
-  padding: 0;
-  margin: 0;
-}
-
-.proprie-raspundere {
-  border: thick solid black;
-  text-align: center;
-  padding: 5px;
-}
-
 pagina {
   display: block;
   page-break-after: always;
-  page-break-before: always;
   margin-top: 50px;
   margin-bottom: 50px;
   padding-top: 5mm;
@@ -82,13 +70,39 @@ pagina .nota-subsol p {
   margin-bottom: 0px;
 }
 
+input {
+  padding: 0;
+  margin: 0;
+}
+
+.proprie-raspundere {
+  border: thick solid black;
+  text-align: center;
+  padding: 5px;
+}
+
 @media print {
   pagina {
     padding: 0px;
     margin: 0px;
+  }
+  @page {
+    margin: 0mm;
+    size: 210mm 297mm;
+  }
+  pagina {
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
+    margin-top: 10mm;
+    /* margin you want for the content */
+    margin-left: 10mm;
+    /* margin you want for the content */
+    margin-bottom: 0mm;
+    /* margin you want for the content */
+    margin-right: 0mm;
+    /* margin you want for the content */
+    padding-top: 5mm;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */

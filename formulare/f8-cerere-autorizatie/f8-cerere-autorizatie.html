@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./styles/input-forms.css">
     <link rel="stylesheet" href="./styles/list.css">
     <script src="./scripts/main.js"></script>
+    <!-- <style type="text/css" media="print">
+    
+    </style> -->
     <title>Formular F8 - Cerere Autorizație de construire</title>
 </head>
 
@@ -80,7 +83,7 @@
                 
             </p>
         </section>
-        <section>
+        <section class="date-cadastrale">
             <div class="date-cadastrale">
                 Cartea funciară: <input type="text" name="cf" id="cf" size="8"> <br>
                 Fişa bunului imobil: <input type="text" name="fisa-bunului" id="fisa-bunului" size="5"> <br>
@@ -95,8 +98,8 @@
             </div>
         
         </section>
-        <section>
-            <p class="date-arhitect indent" style="margin-bottom: 0px;">
+        <section class="date-arhitect">
+            <p class="indent" style="margin-bottom: 0px;">
                 Documentaţia tehnică - D.T. pentru autorizarea executării lucrărilor de construire &#40;D.T.A.C. +
                 D.T.O.E.&#41;, respectiv de desfiinţare a construcţiilor &#40;D.T.A.D.&#41; 
                 nr. <input type="text" name="numar-proiect" id="numar-proiect" size="5">
@@ -135,47 +138,48 @@
                 arhitect, republicată, aflat în evidenţa 
                 Filialei teritoriale <input type="text" name="filiala-proiectant" id="filiala-proiectant" size="15"> a Ordinului Arhitecţilor din România.
             </p>
-            <p class="date-arhitect indent">
-                Verificarea Documentaţiei tehnice - D.T., în conformitate cu prevederile Legii nr. 10/1995, a fost
-                efectuată
-                de:
-            </p>
-            <div class="tabel-verificatori">
-                <div class=row>
-                    1. Cerința A 
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                    
+            <section class="date-verificatori">
+                <p class="indent">
+                    Verificarea Documentaţiei tehnice - D.T., în conformitate cu prevederile Legii nr. 10/1995, 
+                    a fost efectuată de:
+                </p>
+                <div class="tabel-verificatori">
+                    <div class=row>
+                        1. Cerința A 
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                        
+                    </div>
+                    <div class=row>
+                        1. Cerința B 
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                    </div>
+                    <div class=row>
+                        1. Cerința C 
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                    </div>
+                    <div class=row>
+                        1. Cerința D 
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                    </div>
+                    <div class=row>
+                        1. Cerința E
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                    </div>
+                    <div class=row>
+                        1. Cerința F 
+                        <input type="text" name="nume-verif-a" id="nume-verif-a">
+                    </div>
+                    <div class=row>
+                        
+                    </div>
+                    <div class=row>
+                        1. Cerința Af
+                        <input type="text" name="nume-verif-a" id="nume-verif-a" >
+                    </div>
                 </div>
-                <div class=row>
-                    1. Cerința B 
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                </div>
-                <div class=row>
-                    1. Cerința C 
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                </div>
-                <div class=row>
-                    1. Cerința D 
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                </div>
-                <div class=row>
-                    1. Cerința E
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                </div>
-                <div class=row>
-                    1. Cerința F 
-                    <input type="text" name="nume-verif-a" id="nume-verif-a">
-                </div>
-                <div class=row>
-                    
-                </div>
-                <div class=row>
-                    1. Cerința Af
-                    <input type="text" name="nume-verif-a" id="nume-verif-a" >
-                </div>
-            </div>
+            </section>
         </section>
-        <div class="nota-subsol" style="margin-top: 2mm;">
+        <div class="nota-subsol" style="margin-top: 15mm;">
             <sup>*&#41;</sup> Se completează, după caz : <br>
             ⎯ preşedintele consiliului judeţean ;<br>
             ⎯ primarul general al municipiului Bucureşti ;<br>
@@ -202,7 +206,7 @@
             respectiv desfiinţarea construcţiilor &#40;D.T.A.D.&#41; ⎯ anexată prezentei, conform graficului de execuţie, semnat
             şi parafat de proiectant, anexat prezentei.
         </p>
-        <p class=indent>Anexez la prezenta cerere:</p>
+        <p class="indent">Anexez la prezenta cerere:</p>
         <ol>
             <li  type="a">
                 Certificatul de urbanism nr.
@@ -589,7 +593,7 @@
         <section id="cap3 c">
         <p class="indent" style="margin: 0px;">
             c&#41; Procentul de ocupare a terenului ⎯ POT<sup>2&#41;</sup>:
-            existent<input type="text" name="pot-existent" id="pot-existent" size="11"> % 
+            existent<input type="text" name="pot-existent" id="pot-existent" size="10"> % 
             propus<input type="text" name="pot-propus" id="pot-propus" size="11"> % 
         </p>
         </section>

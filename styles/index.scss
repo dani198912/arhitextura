@@ -5,14 +5,15 @@ body {
     padding-top: 0mm;
     padding-left: 10mm;
     padding-right: 10mm;
-    max-width: 210mm;
+    // max-width: 210mm;
     text-align: justify;
     text-justify: inter-word;
     line-height: 1.2;
     float: none !important;
     margin: auto;
     display: grid;
-    grid-template-columns: 40mm 210mm 40mm;
+    grid-template-columns: 10vw 210mm 10vw;
+    column-gap: 20px;
     justify-content: center;
 
     .date-personale {
@@ -49,8 +50,13 @@ body {
 }
 .left-menu, .right-menu{
     text-align: left;
+    margin-top: 50px;
     
 }
+.formular{
+    grid-column: 2;
+}
+
 pagina {
     display: block;
     page-break-after: always;
@@ -85,23 +91,29 @@ input {
 
 .proprie-raspundere {
     border: thick solid black;
-    // margin-left: 40px;
+
     text-align: center;
     padding: 5px;
 }
 
 
 @media print {
-
-    pagina {
-        padding: 0px;
-        margin: 0px;
+    body{
+        padding-top: 0mm;
+        // padding-left: 20mm;
+        // padding-right: 20mm;
+        padding-bottom: 0mm;    
+        // margin-left: 20mm;
+        // margin-right: 20mm;
     }
-
+    
+    .formular{
+        grid-column: 2;
+    }
+    
     @page {
         margin: 0mm;
         size: 210mm 297mm;
-        padding-left: 30mm;
     }
 
     .left-menu,
@@ -109,18 +121,30 @@ input {
         visibility: hidden;
     }
 
+    body{
+        grid-template-columns: 0mm 100% 0mm;
+    }
+
     pagina {
+        // width: 100%;
         border: none;
         box-shadow: none;
+        // padding: 0;
+
         margin-top: 10mm;
         /* margin you want for the content */
-        margin-left: 10mm;
+        margin-left: 0mm;
         /* margin you want for the content */
-        margin-bottom: 0mm;
+        margin-bottom: 10mm;
         /* margin you want for the content */
         margin-right: 0mm;
         /* margin you want for the content */
-        padding-top: 5mm;
+        // padding-top: 0mm;
 
+    }
+    .nota-subsol{
+        position: absolute;
+        bottom: 0px;
+        
     }
 }

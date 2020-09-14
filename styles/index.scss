@@ -53,6 +53,23 @@ body {
     margin-top: 50px;
     
 }
+.right-menu{
+    p{
+        font-size: 2rem;
+        font-family:  Rubik,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+        font-weight: 500;
+        // margin-left: 20px;
+        color: #343a40;
+        letter-spacing: -0.04em;
+    }
+}
+iframe{
+    .roadmap-column{
+        min-height: auto;
+    }
+}
+
+//Setting the main form to middle of the body grid
 .formular{
     grid-column: 2;
 }
@@ -91,29 +108,33 @@ input {
 
 .proprie-raspundere {
     border: thick solid black;
-
     text-align: center;
     padding: 5px;
 }
 
 
 @media print {
-    body{
-        padding-top: 0mm;
-        // padding-left: 20mm;
-        // padding-right: 20mm;
-        padding-bottom: 0mm;    
-        // margin-left: 20mm;
-        // margin-right: 20mm;
-    }
     
-    .formular{
-        grid-column: 2;
-    }
+    
     
     @page {
         margin: 0mm;
         size: 210mm 297mm;
+    }
+    body{
+        padding: 0;
+        // padding-left: 20mm;
+        // padding-right: 20mm;
+            
+        // margin-left: 20mm;
+        // margin-right: 20mm;
+        // margin: 0;
+        max-width: 210mm;
+        grid-template-columns: 0mm 100% 0mm;
+        zoom: 155%;
+    }
+    .formular{
+        grid-column: 2;
     }
 
     .left-menu,
@@ -121,25 +142,16 @@ input {
         visibility: hidden;
     }
 
-    body{
-        grid-template-columns: 0mm 100% 0mm;
-    }
-
     pagina {
         // width: 100%;
         border: none;
         box-shadow: none;
         // padding: 0;
-
-        margin-top: 10mm;
-        /* margin you want for the content */
-        margin-left: 0mm;
-        /* margin you want for the content */
-        margin-bottom: 10mm;
-        /* margin you want for the content */
-        margin-right: 0mm;
-        /* margin you want for the content */
-        // padding-top: 0mm;
+        margin:0;
+        padding-left: 20mm;
+        padding-right: 10mm;
+        padding-top: 5mm;
+        padding-bottom: 0mm;
 
     }
     .nota-subsol{

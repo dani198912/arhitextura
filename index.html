@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/tabelele.css">
     <link rel="stylesheet" href="./styles/input-forms.css">
     <link rel="stylesheet" href="./styles/list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script src="./scripts/main.js"></script>
 
     <title>Formular F8 - Cerere Autorizație de construire</title>
@@ -16,7 +17,7 @@
 <body>
     <div class="left-menu">
         <span>Left menu</span>
-        <input type="button" value="Start" style="width: 100%; margin-top: 200px;">
+        <input type="button" value="Tipărește" style="width: 100%; position: sticky;" onclick="window.print();">
     </div>
     <div class="formular printabil">
         <!-- ===================================Pagina 1=================================== -->
@@ -1529,12 +1530,19 @@
         <!-- ===============================Sfârșit Pagina 5=============================== -->
     </div>
     <div class="right-menu">
-        <span>Right menu</span>
-        <blockquote class="trello-card">
-            <a href="https://trello.com/c/l085g6xV/3-certificat-de-urbanism">Trello Board</a>
-          </blockquote>
-          <script src="https://p.trellocdn.com/embed.min.js"></script>
-        </div>
+        <p>Roadmap</p>
+    <iframe src="https://app.productstash.io/roadmaps/5f5e2b9714f5b0002994c559/public" height="1080" width="400px" frameborder="0" ></iframe>
+    </div>
     </body> 
+    <script>
+        
+        const frame = document.getElementsByTagName("iframe")[0];
+        
+        frame.onload= function(){
+            let columns = frame.contentWindow.document.getElementsByClassName("roadmap-column")
+            console.log(columns);
+        };
+        // roadmapColumns.style.height = 'auto';
+    </script>
     
 </html>

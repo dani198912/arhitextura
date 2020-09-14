@@ -38,14 +38,14 @@ input[name=cod-postal]{
 
 #arie-teren{ max-width: 60px;}
 #cardinale{
-    max-width: 60px;
+    max-width: 160px;
     font-weight: 700;
 }
 @media print{
     select[name=cardinale]{
         border: none;
         appearance: none;
-        width: 60px;
+        width: 120px;
     }
 
     .tabel-suprafete{

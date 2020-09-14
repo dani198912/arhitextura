@@ -10,14 +10,19 @@
     <link rel="stylesheet" href="./styles/list.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
     <script src="./scripts/main.js"></script>
-
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>Formular F8 - Cerere Autorizație de construire</title>
+    
 </head>
 
 <body>
-    <div class="left-menu">
-        <span>Left menu</span>
-        <input type="button" value="Tipărește" style="width: 100%; position: sticky;" onclick="window.print();">
+<div class="left-menu">
+        <p class="small-note" >Instrucțiuni de utiliziare: </p>
+        <p class="small-note" >1. Completează formularul</p>
+        <p class="small-note" >2. Apasă ”Tipărire” din meniul browser-ului sau folosește comanda Crtl+P</p>
+        <p class="small-note" >Notă: La tipărire se va vedea doar tipizatul nu și restul elementelor din pagină.</p>
+        <!-- <input type="button" value="Tipărește" style="width: 100%; position: sticky;" onclick="window.print();"> -->
     </div>
     <div class="formular printabil">
         <!-- ===================================Pagina 1=================================== -->
@@ -622,7 +627,7 @@
                 </li>
                 <p class="indent" style="margin: 0px;"> 
                 de <input type="text" name="distanta-limita-1" id="distanta-limita-1" size="10"> m faţă de limita de proprietate din
-                <select name="cardinale" id="cardinale">
+                <select name="cardinale" id="cardinale" >
                     <option value="Nord">Nord</option>
                     <option value="Sud">Sud</option>
                     <option value="Est">Est</option>
@@ -1530,19 +1535,21 @@
         <!-- ===============================Sfârșit Pagina 5=============================== -->
     </div>
     <div class="right-menu">
-        <p>Roadmap</p>
-    <iframe src="https://app.productstash.io/roadmaps/5f5e2b9714f5b0002994c559/public" height="1080" width="400px" frameborder="0" ></iframe>
+        <div class="social-buttons">
+            <a href="https://join.slack.com/t/formulare-discutii/shared_invite/zt-hixum22p-Wrj9jCfzV3~OrlhbP0YMLg" target="_blank" title="Alătură-te discuției pe slack.com">
+                <img src="./images/Slack_RGB.svg" height="38px" alt="Discuții despre acest site">
+            </a>
+            <!-- Place this tag where you want the button to render. -->
+            <a 
+            class="github-button" 
+            href="https://github.com/dani198912/arhitextura/archive/master.zip" 
+            data-size="large" 
+            aria-label="Download dani198912/arhitextura on GitHub"
+            title="Descarcă codul sursă"
+            >Cod sursă</a>
+        </div>
+        <iframe src="https://app.productstash.io/roadmaps/5f5e2b9714f5b0002994c559/public" height="1080" width="400px" frameborder="0" ></iframe>
     </div>
     </body> 
-    <script>
-        
-        const frame = document.getElementsByTagName("iframe")[0];
-        
-        frame.onload= function(){
-            let columns = frame.contentWindow.document.getElementsByClassName("roadmap-column")
-            console.log(columns);
-        };
-        // roadmapColumns.style.height = 'auto';
-    </script>
-    
+
 </html>

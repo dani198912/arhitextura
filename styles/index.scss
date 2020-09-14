@@ -1,3 +1,8 @@
+
+    $base-color:#343a40;
+    $border-light:#acacac;
+    $border-dark:#343a40;
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.85rem;
@@ -12,7 +17,7 @@ body {
     float: none !important;
     margin: auto;
     display: grid;
-    grid-template-columns: 10vw 210mm 10vw;
+    grid-template-columns: 1fr 210mm 1fr;
     column-gap: 20px;
     justify-content: center;
 
@@ -48,6 +53,12 @@ body {
     }
 
 }
+.small-note{
+    font-size: 0.8rem;
+    color: #343a40;
+    font-style: italic;
+}
+
 .left-menu, .right-menu{
     text-align: left;
     margin-top: 50px;
@@ -61,8 +72,16 @@ body {
         // margin-left: 20px;
         color: #343a40;
         letter-spacing: -0.04em;
+    }    
+    .social-buttons{
+        display: flex;
+        align-items: center;
+        a{
+            margin-right: 10px;
+        }
     }
 }
+
 iframe{
     .roadmap-column{
         min-height: auto;
@@ -83,9 +102,9 @@ pagina {
     padding-bottom: 5mm;
     padding-left: 10mm;
     padding-right: 10mm;
-    border: 1px solid black;
+    border: 1px solid $border-light;
     box-shadow: 10px 11px 5px -4px rgba(0, 0, 0, 0.55);
-
+    border-radius: 4px;
     .nota-subsol {
         border-top: 1px solid black;
         font-size: 0.5rem;
@@ -119,7 +138,7 @@ input {
     
     @page {
         margin: 0mm;
-        size: 210mm 297mm;
+        size: A4 portrait;
     }
     body{
         padding: 0;
@@ -131,7 +150,7 @@ input {
         // margin: 0;
         max-width: 210mm;
         grid-template-columns: 0mm 100% 0mm;
-        zoom: 155%;
+        zoom: 150%;
     }
     .formular{
         grid-column: 2;
@@ -149,7 +168,7 @@ input {
         // padding: 0;
         margin:0;
         padding-left: 20mm;
-        padding-right: 10mm;
+        padding-right: 20mm;
         padding-top: 5mm;
         padding-bottom: 0mm;
 
